@@ -1,4 +1,5 @@
-<?php
+<?php 
+//Definir variaveis//
 $nota1 = '8';
 $nota2 = '7 ';
 $nota3 = '9' ;
@@ -8,10 +9,10 @@ echo "A segunda nota é = $nota2 <br>";
 echo "A terceira nota é = $nota3 <br>";
 
 $media = ($nota1 + $nota2 + $nota3)/3;
-
+//conta da media//
 echo "Sua média é:  $media <br>";
 if ($media <7 ){;
-    echo "Você foi reprovado";
+    echo "Você foi reprovado"; //Resposta //
 }else{
     echo "Você foi aprovado";
 }
