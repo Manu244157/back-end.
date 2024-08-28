@@ -1,7 +1,7 @@
 <?php
 
 $numeros = ["0","1","2","3","4","5","6","7","8","9"];
-
+ //classificando o array
 
 echo'<pre>';
 print_r ($numeros);
@@ -14,7 +14,7 @@ echo"<hr>";
 echo'<pre>';
 
 echo'<pre>';
-//Alternando valor 0 -> MORANGO P/ melancia
+//Alternando valores
 $numeros[0]= "100";
 $numeros[4]= "500";
 $numeros[9]= "1000";
