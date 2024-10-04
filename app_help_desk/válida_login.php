@@ -27,7 +27,7 @@ if ($usuario_auntenticado == true){
     header('Location: painel.php');
 }else{
     echo "Usuário ou senha incorreto";
-    header('Location: index.php?erro=user');
+    header('Location: index.php?login=erro');
 }
 ?>
     
