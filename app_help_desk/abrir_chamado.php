@@ -1,20 +1,21 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>App Help Desk</title>
+    <title>Resenha literária</title>
 
+    
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">  
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-
+    
     </style>
   </head>
 
   <body>
-
+    
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <img src="logo.webp" width="50" height="50" class="d-inline-block align-top" alt="">
+        Resenha literária
       </a>
       <ul class="navbar-nav">
       <li class="nav-item"> 
@@ -29,7 +30,7 @@
         <div class="card-abrir-chamado">
           <div class="card">
             <div class="card-header">
-              Abertura de chamado
+              Faça a resenha do livro aqui
             </div>
             <div class="card-body">
               <div class="row">
@@ -42,13 +43,13 @@
                     </div>
                     
                     <div class="form-group">
-                      <label>Categoria</label>
+                      <label>Gênero</label>
                       <select class="form-control">
-                        <option>Criação Usuário</option>
-                        <option>Impressora</option>
-                        <option>Hardware</option>
-                        <option>Software</option>
-                        <option>Rede</option>
+                        <option>Romance</option>
+                        <option>Fantasia</option>
+                        <option>Ficção</option>
+                        <option>Aventura</option>
+                        <option>Drama</option>
                       </select>
                     </div>
                     
@@ -59,7 +60,8 @@
 
                     <div class="row mt-5">
                       <div class="col-6">
-                        <a class="btn btn-lg btn-warning btn-block" href="painel.php">Voltar</a>
+              
+                       <a class="btn btn-lg btn-warning btn-block" href="painel.php">Voltar</a> 
             
                       </div>
 

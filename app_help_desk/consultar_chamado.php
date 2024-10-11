@@ -7,10 +7,10 @@ require_once("login.php");
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>App Help Desk</title>
+    <title>Resenha literária</title>
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
     </style>
   </head>
@@ -19,8 +19,8 @@ require_once("login.php");
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <img src="logo.webp" width="50" height="50" class="d-inline-block align-top" alt="">
+        Resenha literária
       </a>
       <ul class="navbar-nav">
       <li class="nav-item"> 
@@ -35,25 +35,34 @@ require_once("login.php");
         <div class="card-consultar-chamado">
           <div class="card">
             <div class="card-header">
-              Consulta de chamado
+              Livros mais lidos do mês
             </div>
             
             <div class="card-body">
               
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
+                  <h5 class="card-title">Trono de vidro</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Sarah J maas</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Fantasia e Romance</h6>
+                  <p class="card-text">Ela é uma assassina, e a melhor de Adarlan. Aprisionada e fraca, 
+                    ela está quase perdendo as esperanças, a sentença de morte é iminente, mas a jovem recebe
+                     uma proposta inesperada: representar o príncipe em uma competição com lutando contra os mais
+                      habilidosos assassinos e larápios do reino.</p>
 
                 </div>
               </div>
 
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
+                  <h5 class="card-title">Misery</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Sthephen King</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Gênero</h6>
+                  <p class="card-text">Paul Sheldon é um escritor famoso, reconhecido por uma série de best-sellers
+                     protagonizados pela mesma personagem: Misery Chastain. Annie Wilkes é uma enfermeira aposentada,
+                      leitora voraz e obcecada pela história de Misery. Quando Paul sofre um acidente de carro em uma 
+                      nevasca, ele é resgatado justamente por Annie, e esse encontro entre fã e autor é o ponto de 
+                      partida de uma das tramas mais aterrorizantes de Stephen King</p>
 
                 </div>
               </div>

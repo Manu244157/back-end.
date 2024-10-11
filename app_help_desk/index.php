@@ -5,8 +5,8 @@
   </body>
   </html>
   <head>
-    <meta charset="utf-8" />
-    <title>App Help Desk</title>
+    <meta charset="utf-8" />]
+    <title>Resenha literária</title>
 
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
@@ -20,8 +20,8 @@
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <img src="logo.webp" width="50" height="50" class="d-inline-block align-top" alt="">
+        Resenha literária
       </a>
     </nav>
 
@@ -57,7 +57,8 @@
 
                 <?php } ?>
                
-                <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
+                <button class="entrar" type="submit">Entrar</button>
+                <button class="new" type="submit">Fazer conta nova</button>
               </form>
             </div>
           </div>

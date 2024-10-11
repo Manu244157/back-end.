@@ -37,3 +37,17 @@
   color: white;
   transform: scale(1,1);
 }
+
+body{
+  background-color: rgb(41, 69, 161);
+}
+
+.entrar{
+  background-color: rgb(36, 182, 123);
+  width: 310px;
+}
+
+.new{
+  background-color: rgb(205, 224, 35);
+  width: 310px;
+}
