@@ -1,8 +1,20 @@
-<?php
+<?php require_once("login.php"); ?>
 
-require_once("login.php");
+<?php
+$arquivo = fopen('registro.txt' , 'r');
+
+while (!feof($arquivo)){
+  $registro = fgets($arquivo);
+  $chamados[] = $registro;
+}
+
+fclose($arquivo);
+// echo '<pre>';
+// print_r($chamados);
+// echo '</pre>';
 
 ?>
+
 
 <html>
   <head>
@@ -39,33 +51,33 @@ require_once("login.php");
             </div>
             
             <div class="card-body">
+              <?php
+
+              foreach($chamados as $chamado){
+          
+              $chamado_dados = explode ('#', $chamado);
+
+              if(count($chamado_dados) < 3 ){
+                continue;
+              }
+
+              // echo '<pre>';
+              // print_r($chamado_dados);
+              // echo '</pre>';
+
+              
+              ?>
               
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Trono de vidro</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Sarah J maas</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">Fantasia e Romance</h6>
-                  <p class="card-text">Ela é uma assassina, e a melhor de Adarlan. Aprisionada e fraca, 
-                    ela está quase perdendo as esperanças, a sentença de morte é iminente, mas a jovem recebe
-                     uma proposta inesperada: representar o príncipe em uma competição com lutando contra os mais
-                      habilidosos assassinos e larápios do reino.</p>
-
+                <h5 class="card-title"> <?php echo $chamado_dados[0]; ?>
+              </h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><?php echo $chamado_dados[1]; ?></h6>
+                  <p class="card-text"><?php echo $chamado_dados[2]; ?></p>
                 </div>
               </div>
-
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Misery</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Sthephen King</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">Gênero</h6>
-                  <p class="card-text">Paul Sheldon é um escritor famoso, reconhecido por uma série de best-sellers
-                     protagonizados pela mesma personagem: Misery Chastain. Annie Wilkes é uma enfermeira aposentada,
-                      leitora voraz e obcecada pela história de Misery. Quando Paul sofre um acidente de carro em uma 
-                      nevasca, ele é resgatado justamente por Annie, e esse encontro entre fã e autor é o ponto de 
-                      partida de uma das tramas mais aterrorizantes de Stephen King</p>
-
-                </div>
-              </div>
+              <?php }
+              ?>
 
               <div class="row mt-5">
                 <div class="col-6">

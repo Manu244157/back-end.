@@ -38,7 +38,7 @@
                   
                   <form action="registra_chamada.php" method="POST">
                     <div class="form-group">
-                      <label>Título</label>
+                      <label>Titulo</label>
                       <input name="titulo" type="text" class="form-control" placeholder="Título">
                     </div>
                     
@@ -54,7 +54,7 @@
                     </div>
                     
                     <div class="form-group">
-                      <label>Descrição</label>
+                      <label>Descriçao</label>
                       <textarea name="descricao" class="form-control" rows="3"></textarea>
                     </div>
 

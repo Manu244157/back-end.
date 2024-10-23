@@ -11,14 +11,16 @@ $genero = $_POST['genero'];
 
 $descricao = $_POST['descricao'];
 
-$texto = $titulo. '#' . $genero. '#'. $descricao;
+$texto = $titulo. ' # '  .$genero. ' # ' .$descricao.PHP_EOL;
 
 echo $texto;
 
 $arquivo = fopen('registro.txt', 'a');
 
-fwrite($arquivo, '$texto');
+fwrite($arquivo, $texto);
 
 fclose($arquivo);
+
+header('location:painel.php');
 
 ?>
