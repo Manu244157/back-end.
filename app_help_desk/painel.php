@@ -5,12 +5,12 @@ require_once("login.php");
 ?>
 
 <html>
-  <head>
+  <head lang="pt-br">
     <meta charset="utf-8" />
-    <title>Resenha literária</title>
+    <title>Entre páginas</title>
 
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
    
     </style>
   </head>
@@ -20,11 +20,11 @@ require_once("login.php");
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="logo.webp" width="50" height="50" class="d-inline-block align-top" alt="">
-        Resenha literária
+        Entre páginas
       </a>
      <ul class="navbar-nav">
       <li class="nav-item"> 
-        <button onclick="location.href='index.php'" class="botao-sair" type="button"> Sair </button>
+        <button onclick="location.href='entrar.php'" class="botao-sair" type="button"> Sair </button>
       </li>
      </ul>
     </nav>

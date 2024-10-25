@@ -1,28 +1,25 @@
-<?php require_once("login.php"); ?>
+<?php require_once ("login.php"); ?>
 
-<?php
-$arquivo = fopen('registro.txt' , 'r');
+<?php 
+$arquivo = fopen('../../app_help_desk/registro.txt' , 'r');
 
-while (!feof($arquivo)){
+while(!feof($arquivo)) {
   $registro = fgets($arquivo);
   $chamados[] = $registro;
 }
 
-fclose($arquivo);
 // echo '<pre>';
 // print_r($chamados);
 // echo '</pre>';
-
 ?>
 
-
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <title>Resenha literária</title>
+    <title>Emanuela</title>
 
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     </style>
   </head>
@@ -31,14 +28,14 @@ fclose($arquivo);
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.webp" width="50" height="50" class="d-inline-block align-top" alt="">
-        Resenha literária
+        <img src="./logo.webp" width="50" height="50" class="d-inline-block align-top" alt="">
+        Entre páginas
       </a>
       <ul class="navbar-nav">
-      <li class="nav-item"> 
-        <button onclick="location.href='index.php'" class="botao-sair" type="button"> Sair </button>
-      </li>
-     </ul>
+          <li class="nav-item">
+          <button onclick="location.href='logoff.php'"class="botao-sair" type="button"> Sair </button>
+          </li>
+        </ul>
     </nav>
 
     <div class="container">    
@@ -47,11 +44,12 @@ fclose($arquivo);
         <div class="card-consultar-chamado">
           <div class="card">
             <div class="card-header">
-              Livros mais lidos do mês
+              Resenhas
             </div>
-            
+           
             <div class="card-body">
-              <?php
+
+            <?php
 
               foreach($chamados as $chamado){
           
@@ -76,7 +74,7 @@ fclose($arquivo);
                   <p class="card-text"><?php echo $chamado_dados[2]; ?></p>
                 </div>
               </div>
-              <?php }
+    <?php }
               ?>
 
               <div class="row mt-5">
