@@ -4,12 +4,12 @@
 class Aluno{
  
 public $nome = "Manu";
-public $idade = null;
+public $idade = 16;
 public $curso = 'química';
 
 
 function exibirDadosAluno(){
-    return "$this->nome está inscrita no curso de $this->curso";
+    return "$this->nome de $this->idade anos está inscrita no curso de $this->curso";
 }
 function AlterCurso($alterarcurso){
     $this->curso = $alterarcurso;
