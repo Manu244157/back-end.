@@ -9,7 +9,7 @@ public $anoPublicacao = '2013';
 
 
 function exibirDetalhes(){
-    return " O livro $this->titulo escrito por $this->autor  foi publicado em $this->anoPublicacao";
+    return " O livro $this->titulo escrito por $this->autor , foi publicado em $this->anoPublicacao";
 }
 function AlterAnoPublicacao($alterarAnoPubli){
     $this->anoPublicacao = $alterarAnoPubli;
